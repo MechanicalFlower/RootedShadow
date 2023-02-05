@@ -1,0 +1,129 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://scripts/player/sprint.gd" type="Script" id=2]
+[ext_resource path="res://scenes/player/head.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/player/movement_controller.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scripts/player/interact_ray.gd" type="Script" id=5]
+[ext_resource path="res://scripts/player/footsteep.gd" type="Script" id=6]
+[ext_resource path="res://assets/audios/character/footsteep/grass/4.ogg" type="AudioStream" id=7]
+[ext_resource path="res://assets/audios/character/footsteep/grass/5.ogg" type="AudioStream" id=8]
+[ext_resource path="res://assets/audios/character/footsteep/concrete/6.ogg" type="AudioStream" id=9]
+[ext_resource path="res://assets/audios/character/footsteep/grass/3.ogg" type="AudioStream" id=10]
+[ext_resource path="res://assets/audios/character/footsteep/grass/1.ogg" type="AudioStream" id=11]
+[ext_resource path="res://assets/audios/character/footsteep/concrete/0.ogg" type="AudioStream" id=12]
+[ext_resource path="res://assets/audios/character/footsteep/concrete/3.ogg" type="AudioStream" id=13]
+[ext_resource path="res://assets/audios/character/footsteep/concrete/4.ogg" type="AudioStream" id=14]
+[ext_resource path="res://assets/audios/character/footsteep/concrete/2.ogg" type="AudioStream" id=15]
+[ext_resource path="res://assets/audios/character/footsteep/grass/2.ogg" type="AudioStream" id=16]
+[ext_resource path="res://assets/audios/character/footsteep/concrete/5.ogg" type="AudioStream" id=17]
+[ext_resource path="res://assets/audios/character/footsteep/concrete/1.ogg" type="AudioStream" id=18]
+[ext_resource path="res://assets/audios/character/footsteep/grass/0.ogg" type="AudioStream" id=19]
+[ext_resource path="res://scenes/player/compass.tscn" type="PackedScene" id=20]
+
+[node name="Player" groups=["player"] instance=ExtResource( 4 )]
+speed = 12
+
+[node name="Head" parent="." index="1" instance=ExtResource( 3 )]
+
+[node name="InteractRay" type="RayCast" parent="Head" index="1"]
+enabled = true
+cast_to = Vector3( 0, 0, -4 )
+script = ExtResource( 5 )
+
+[node name="Prompt" type="Label" parent="Head/InteractRay" index="0"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = 19.0
+margin_bottom = 114.0
+text = "Message
+[Key]"
+align = 1
+
+[node name="feet" type="RayCast" parent="Head" index="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 0 )
+enabled = true
+cast_to = Vector3( 0, -2, 0 )
+
+[node name="Compass" parent="Head" index="4" instance=ExtResource( 20 )]
+transform = Transform( 1.33261, -1.66792, -0.817286, 0, 1.00588, -2.0528, 1.85739, 1.19667, 0.586372, 0.972341, -0.516097, -0.947834 )
+
+[node name="Sprint" type="Node" parent="." index="2"]
+script = ExtResource( 2 )
+
+[node name="AddFootAudio" type="Node" parent="." index="3"]
+script = ExtResource( 6 )
+feet_path = NodePath("../Head/feet")
+audio_path = NodePath("../Audios")
+character_path = NodePath("..")
+
+[node name="Audios" type="Spatial" parent="." index="4"]
+
+[node name="grass" type="Spatial" parent="Audios" index="0"]
+
+[node name="0" type="AudioStreamPlayer3D" parent="Audios/grass" index="0"]
+stream = ExtResource( 19 )
+unit_db = -10.0
+bus = "SFX"
+
+[node name="1" type="AudioStreamPlayer3D" parent="Audios/grass" index="1"]
+stream = ExtResource( 11 )
+unit_db = -10.0
+bus = "SFX"
+
+[node name="2" type="AudioStreamPlayer3D" parent="Audios/grass" index="2"]
+stream = ExtResource( 16 )
+unit_db = -10.0
+bus = "SFX"
+
+[node name="3" type="AudioStreamPlayer3D" parent="Audios/grass" index="3"]
+stream = ExtResource( 10 )
+unit_db = -10.0
+bus = "SFX"
+
+[node name="4" type="AudioStreamPlayer3D" parent="Audios/grass" index="4"]
+stream = ExtResource( 7 )
+unit_db = -10.0
+bus = "SFX"
+
+[node name="5" type="AudioStreamPlayer3D" parent="Audios/grass" index="5"]
+stream = ExtResource( 8 )
+unit_db = -10.0
+bus = "SFX"
+
+[node name="concrete" type="Spatial" parent="Audios" index="1"]
+
+[node name="0" type="AudioStreamPlayer3D" parent="Audios/concrete" index="0"]
+stream = ExtResource( 12 )
+unit_db = -10.0
+bus = "SFX"
+
+[node name="1" type="AudioStreamPlayer3D" parent="Audios/concrete" index="1"]
+stream = ExtResource( 18 )
+unit_db = -10.0
+bus = "SFX"
+
+[node name="2" type="AudioStreamPlayer3D" parent="Audios/concrete" index="2"]
+stream = ExtResource( 15 )
+unit_db = -10.0
+bus = "SFX"
+
+[node name="3" type="AudioStreamPlayer3D" parent="Audios/concrete" index="3"]
+stream = ExtResource( 13 )
+unit_db = -10.0
+bus = "SFX"
+
+[node name="4" type="AudioStreamPlayer3D" parent="Audios/concrete" index="4"]
+stream = ExtResource( 14 )
+unit_db = -10.0
+bus = "SFX"
+
+[node name="5" type="AudioStreamPlayer3D" parent="Audios/concrete" index="5"]
+stream = ExtResource( 17 )
+unit_db = -10.0
+bus = "SFX"
+
+[node name="6" type="AudioStreamPlayer3D" parent="Audios/concrete" index="6"]
+stream = ExtResource( 9 )
+unit_db = -10.0
+bus = "SFX"

@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/root_collider.gd" type="Script" id=2]
+[ext_resource path="res://assets/audios/step/stepwood_1.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/audios/step/stepwood_2.wav" type="AudioStream" id=6]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.667241, 0.569781, 3.38897 )
+
+[node name="RootCollider" type="Area"]
+script = ExtResource( 2 )
+audio_path = NodePath("WoodAudios")
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.911181, 0, 0.412007, 0, 1, 0, -0.412007, 0, 0.911181, -0.186113, 4.76837e-07, -0.502517 )
+shape = SubResource( 1 )
+
+[node name="WoodAudios" type="Spatial" parent="."]
+
+[node name="0" type="AudioStreamPlayer" parent="WoodAudios"]
+stream = ExtResource( 5 )
+volume_db = 10.0
+bus = "SFX"
+
+[node name="1" type="AudioStreamPlayer" parent="WoodAudios"]
+stream = ExtResource( 6 )
+volume_db = 10.0
+bus = "SFX"

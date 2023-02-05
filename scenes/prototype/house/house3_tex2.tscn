@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/editor/quick_material.gd" type="Script" id=1]
+[ext_resource path="res://assets/models/house/models/house3.glb" type="PackedScene" id=2]
+[ext_resource path="res://resources/materials/house/house3_tex2.tres" type="Material" id=3]
+
+[node name="Node" type="Spatial"]
+
+[node name="house3" parent="." instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+material = ExtResource( 3 )

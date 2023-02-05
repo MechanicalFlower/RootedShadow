@@ -1,0 +1,14 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/editor/quick_material.gd" type="Script" id=1]
+[ext_resource path="res://assets/models/car/Car 06/Car6.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://resources/materials/car/car6_rust.tres" type="Material" id=3]
+[ext_resource path="res://resources/materials/car/car4_lightorange.tres" type="Material" id=4]
+
+[node name="RustCar" type="Spatial"]
+
+[node name="Car" type="MeshInstance" parent="."]
+material_override = ExtResource( 4 )
+mesh = ExtResource( 2 )
+script = ExtResource( 1 )
+material = ExtResource( 3 )

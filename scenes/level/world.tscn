@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/level/forest.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/audios/wind woosh loop.ogg" type="AudioStream" id=3]
+
+[node name="World" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -137.193, -2.28287, 156.168 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+autoplay = true
+bus = "SFX"
+
+[node name="Maze" parent="." instance=ExtResource( 1 )]

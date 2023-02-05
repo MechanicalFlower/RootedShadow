@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/0.ogg-3e3cf918f5aa31f37d69074ba87f9664.oggstr"
+
+[deps]
+
+source_file="res://assets/audios/character/fall/jump/0.ogg"
+dest_files=[ "res://.import/0.ogg-3e3cf918f5aa31f37d69074ba87f9664.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

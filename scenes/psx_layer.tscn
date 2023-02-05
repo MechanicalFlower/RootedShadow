@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://resources/post_processing/pp_dither.tres" type="Material" id=1]
+[ext_resource path="res://resources/post_processing/pp_lcd_mat.tres" type="Material" id=2]
+[ext_resource path="res://resources/post_processing/pp_blur_mat.tres" type="Material" id=3]
+[ext_resource path="res://scenes/player/player.tscn" type="PackedScene" id=4]
+
+[node name="PSXLayer" type="CanvasLayer"]
+
+[node name="BlurPostProcess" type="ViewportContainer" parent="."]
+material = ExtResource( 3 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+stretch = true
+
+[node name="Viewport" type="Viewport" parent="BlurPostProcess" groups=["viewports"]]
+size = Vector2( 1024, 600 )
+handle_input_locally = false
+render_target_update_mode = 3
+audio_listener_enable_2d = true
+audio_listener_enable_3d = true
+
+[node name="LCDOverlay" type="ViewportContainer" parent="BlurPostProcess/Viewport"]
+material = ExtResource( 2 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viewport" type="Viewport" parent="BlurPostProcess/Viewport/LCDOverlay" groups=["viewports"]]
+size = Vector2( 1024, 600 )
+handle_input_locally = false
+render_target_update_mode = 3
+audio_listener_enable_2d = true
+audio_listener_enable_3d = true
+
+[node name="DitherBanding" type="ViewportContainer" parent="BlurPostProcess/Viewport/LCDOverlay/Viewport"]
+material = ExtResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+stretch = true
+stretch_shrink = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viewport" type="Viewport" parent="BlurPostProcess/Viewport/LCDOverlay/Viewport/DitherBanding" groups=["viewports"]]
+size = Vector2( 341, 200 )
+handle_input_locally = false
+render_target_update_mode = 3
+audio_listener_enable_2d = true
+audio_listener_enable_3d = true
+
+[node name="Player" parent="BlurPostProcess/Viewport/LCDOverlay/Viewport/DitherBanding/Viewport" instance=ExtResource( 4 )]

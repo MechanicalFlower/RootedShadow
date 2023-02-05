@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bfh1_breaking_03.ogg-819101edc3aa81bb4041d05b949d7d65.oggstr"
+
+[deps]
+
+source_file="res://assets/audios/beaking/bfh1_breaking_03.ogg"
+dest_files=[ "res://.import/bfh1_breaking_03.ogg-819101edc3aa81bb4041d05b949d7d65.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

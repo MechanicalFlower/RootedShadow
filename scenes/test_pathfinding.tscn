@@ -1,0 +1,72 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://resources/materials/red.tres" type="Material" id=1]
+[ext_resource path="res://resources/materials/yellow.tres" type="Material" id=2]
+[ext_resource path="res://scripts/path_finder_body.gd" type="Script" id=3]
+
+[sub_resource type="NavigationMesh" id=1]
+vertices = PoolVector3Array( 18, 1.65824, 18, 18, 1.65824, 14, 10, 1.65824, 12, 8, 1.65824, 18, 8, 1.65824, -18, 0, 1.65824, -18, 0, 1.65824, -6, 8, 1.65824, 18, 10, 1.65824, 12, 6, 1.65824, 8, 0, 1.65824, 18, -10, 1.65824, -18, -18, 1.65824, -18, -18, 1.65824, -10, -18, 1.65824, 0, -18, 1.65824, 8, -6, 1.65824, 2, -8, 1.65824, -4, 8, 1.65824, 0, 18, 1.65824, 6, 18, 1.65824, -6, -18, 1.65824, 8, -18, 1.65824, 18, -10, 1.65824, 18, 6, 1.65824, 8, 0, 1.65824, 4, -6, 1.65824, 2, -18, 1.65824, 8, -10, 1.65824, 18, 0, 1.65824, 18, 18, 1.65824, -6, 18, 1.65824, -18, 8, 1.65824, -18, 0, 1.65824, -6, 8, 1.65824, 0, -18, 1.65824, -10, -18, 1.65824, 0, -8, 1.65824, -4, -8, 1.65824, -4, 0, 1.65824, -6, 0, 1.65824, -18, -10, 1.65824, -18, -18, 1.65824, -10 )
+polygons = [ PoolIntArray( 1, 0, 2 ), PoolIntArray( 2, 0, 3 ), PoolIntArray( 6, 5, 4 ), PoolIntArray( 8, 7, 9 ), PoolIntArray( 9, 7, 10 ), PoolIntArray( 13, 12, 11 ), PoolIntArray( 17, 16, 14 ), PoolIntArray( 14, 16, 15 ), PoolIntArray( 20, 19, 18 ), PoolIntArray( 23, 22, 21 ), PoolIntArray( 25, 24, 26 ), PoolIntArray( 26, 24, 29 ), PoolIntArray( 26, 29, 28 ), PoolIntArray( 26, 28, 27 ), PoolIntArray( 31, 30, 32 ), PoolIntArray( 32, 30, 34 ), PoolIntArray( 32, 34, 33 ), PoolIntArray( 37, 36, 35 ), PoolIntArray( 39, 38, 40 ), PoolIntArray( 40, 38, 41 ), PoolIntArray( 41, 38, 42 ) ]
+cell_size = 2.0
+cell_height = 1.0
+agent_height = 1.0
+agent_radius = 1.0
+
+[sub_resource type="CubeMesh" id=2]
+
+[sub_resource type="ConcavePolygonShape" id=7]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CapsuleMesh" id=4]
+
+[sub_resource type="CapsuleMesh" id=3]
+
+[sub_resource type="CapsuleShape" id=5]
+
+[node name="Pathfinding" type="Spatial"]
+
+[node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="."]
+navmesh = SubResource( 1 )
+
+[node name="Platform" type="MeshInstance" parent="NavigationMeshInstance"]
+transform = Transform( 20, 0, 0, 0, 0.2, 0, 0, 0, 20, 0, 0, 0 )
+mesh = SubResource( 2 )
+
+[node name="Obstacles" type="MeshInstance" parent="NavigationMeshInstance"]
+transform = Transform( 10.7885, 0, -0.522291, 0, 1.54954, 0, 6.33971, 0, 0.888801, 6.83557, 1.20778, 3.93833 )
+mesh = SubResource( 2 )
+
+[node name="StaticBody" type="StaticBody" parent="NavigationMeshInstance/Obstacles"]
+
+[node name="CollisionShape" type="CollisionShape" parent="NavigationMeshInstance/Obstacles/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Player" type="MeshInstance" parent="." groups=["player"]]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10.9407, 1.75529, -8.15968 )
+mesh = SubResource( 4 )
+material/0 = ExtResource( 2 )
+
+[node name="KinematicBody" type="KinematicBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.83939, 7.696 )
+script = ExtResource( 3 )
+
+[node name="NavigationAgent" type="NavigationAgent" parent="KinematicBody"]
+unique_name_in_owner = true
+avoidance_enabled = true
+radius = 2.0
+
+[node name="MeshInstance" type="MeshInstance" parent="KinematicBody"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+mesh = SubResource( 3 )
+skeleton = NodePath("../..")
+material/0 = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="KinematicBody"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+shape = SubResource( 5 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( -4.3291e-08, -0.138361, 0.990382, -6.04794e-09, 0.990382, 0.138361, -1, 0, -4.37114e-08, 20.4238, 5.68918, -0.277027 )
+size = 20.0
+near = 0.49
+far = 1650.0

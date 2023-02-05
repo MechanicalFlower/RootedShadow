@@ -1,0 +1,18 @@
+[gd_resource type="Environment" load_steps=3 format=2]
+
+[ext_resource path="res://assets/PSX_NIGHTSKY.hdr" type="Texture" id=1]
+
+[sub_resource type="PanoramaSky" id=1]
+panorama = ExtResource( 1 )
+
+[resource]
+background_mode = 2
+background_sky = SubResource( 1 )
+fog_enabled = true
+fog_color = Color( 0.117647, 0.12549, 0.137255, 1 )
+fog_depth_begin = 7.0
+fog_depth_end = 15.0
+ssao_quality = 0
+ssao_blur = 2
+dof_blur_near_distance = 10.37
+glow_enabled = true

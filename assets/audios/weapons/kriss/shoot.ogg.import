@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/shoot.ogg-b1f3f7e0681b3596ba2b4aa7a94138e8.oggstr"
+
+[deps]
+
+source_file="res://assets/audios/weapons/kriss/shoot.ogg"
+dest_files=[ "res://.import/shoot.ogg-b1f3f7e0681b3596ba2b4aa7a94138e8.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

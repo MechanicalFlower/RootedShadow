@@ -1,0 +1,45 @@
+- petite foret
+	- [x] ambiance nuit
+		- [x] fog
+		- [x] skybox
+	- [x] terrain
+	- [x] chemin
+	- [x] arbre
+	- [x] on spawn au milieu
+	- [x] zone de fin (sortie de la foret / ville)
+	- [x] delimitation
+- arbre "tentaculaire"
+	- [x] inverse kinematics
+	- [x] path follow
+	- [x] navmesh
+	- [x] poursuite
+		- [x] game over
+		- [x] retour a la normale ou re poursuite
+	- [x] bruit de pas
+	- [x] design des jambe style racine
+- racine au sol
+	- [x] model
+	- [x] trigger
+	- [x] bruit de pas
+- [x] zone de départ
+- [x] boussole
+- [ ] zone pour se cacher
+- streetlights
+	- [x] debut, fin et a chaque porte
+	- [x] relier par un cable (pour indiquer au joueur ou aller)   
+- parcours de game design pour donner du fils a retordre au joueur
+	- [x] "level 1" le labyrinthe (on pense que suivre la boussole est une bonne idée)
+	- [x] "level 2" le carré (on apprend a se caché)
+	- [x] "level 3" le passage obligé (on cours se caché)
+	- peut etre faire trois scenes pour les perfs
+- bonus: 
+	- [x] footsteep
+	- wind
+		- [x] sound
+		- [ ] shader
+	- [x] smoke/fog effect in forest
+- bug:
+	- [x] Sound effect (juste besoin de definir le bus dans l'audiostremplayer)
+	- [x] Mouse Sensibility
+	- [x] don't seen skybox under woods
+	- [x] liaison entre les levels

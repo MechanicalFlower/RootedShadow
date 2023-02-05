@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/0.ogg-0c1454f4fe552ebe47c850adccc3f6c7.oggstr"
+
+[deps]
+
+source_file="res://assets/audios/character/footsteep/concrete/0.ogg"
+dest_files=[ "res://.import/0.ogg-0c1454f4fe552ebe47c850adccc3f6c7.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
