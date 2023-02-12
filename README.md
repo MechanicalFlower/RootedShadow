@@ -7,7 +7,9 @@
 
 [![itch.io](https://img.shields.io/badge/itch.io-rooted--shadow-black?logo=Itch.io&logoColor=white&color=FA5C5C)](https://mechanical-flower.itch.io/rooted-shadow)
 
-A short stealth game in a dark forest, made with [Godot Engine](https://godotengine.org/).
+A short stealth game in a dark forest, made with [Godot Engine](https://godotengine.org/), for the Global Game Jam 2023.
+
+<img src="docs/Screenshots1.PNG" width="30%"> <img src="docs/Screenshots2.PNG" width="30%">
 
 </div>
 
@@ -17,12 +19,11 @@ You are a lost person, in a dark forest, where you are not welcome. You are look
 
 ### Controls
 
-- `WASD`: Move
-- `Shift`: Sprint
-- `Space`: Jump
-- `ESC`: Settings
-
-And support Gamepad.
+- `WASD` or `left stick` to move.
+- `Mouse` or `right stick` to move the camera around.
+- `Shift` or `Xbox L3` to sprint.
+- `Space` or `Xbox Ⓐ` to jump.
+- `ESC` to open and close settings menu.
 
 ## Contributing
 

@@ -1,0 +1,7 @@
+# Add a scene to all mesh instance of a multimesh
+static func add_scene_to_mesh_by_multimesh(multimesh_instance: MultiMeshInstance, packed_scene: PackedScene) -> void:
+	for index in multimesh_instance.multimesh.instance_count:
+		var trans := multimesh_instance.multimesh.get_instance_transform(index) as  Transform 
+		var scene := packed_scene.instance() as Spatial
+		scene.transform = trans
+		multimesh_instance.add_child(scene)
