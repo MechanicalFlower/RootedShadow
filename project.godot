@@ -84,7 +84,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/CSGExport/plugin.cfg", "res://addons/array_modifier/plugin.cfg", "res://addons/brush/plugin.cfg", "res://addons/fps_graph_overlay/plugin.cfg", "res://addons/scatter/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/CSGExport/plugin.cfg", "res://addons/brush/plugin.cfg", "res://addons/fps_graph_overlay/plugin.cfg", "res://addons/scatter/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg" )
 
 [input]
 
