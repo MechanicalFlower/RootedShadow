@@ -1107,9 +1107,9 @@ func _edit_update_viewer_position(camera: Camera):
 
 func _update_viewer_position(camera: Camera):
 	if camera == null:
-		var viewport := get_viewport()
-		if viewport != null:
-			camera = viewport.get_camera()
+		var players = get_tree().get_nodes_in_group("player")
+		if len(players) > 0:
+			camera = players[0].get_node('Head/Camera')
 
 	if camera == null:
 		return
