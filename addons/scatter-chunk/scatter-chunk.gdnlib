@@ -1,0 +1,29 @@
+[general]
+
+singleton=false
+load_once=true
+symbol_prefix="godot_"
+reloadable=true
+
+[entry]
+
+HTML5.wasm32="res://addons/scatter-chunk/lib/wasm32-unknown-emscripten/scatter_chunk.wasm"
+OSX.64="res://addons/scatter-chunk/lib/x86_64-apple-darwin/libscatter_chunk.dylib"
+Server.32="res://addons/scatter-chunk/lib/i686-unknown-linux-gnu/libscatter_chunk.so"
+Server.64="res://addons/scatter-chunk/lib/x86_64-unknown-linux-gnu/libscatter_chunk.so"
+Windows.32="res://addons/scatter-chunk/lib/i686-pc-windows-msvc/scatter_chunk.dll"
+Windows.64="res://addons/scatter-chunk/lib/x86_64-pc-windows-msvc/scatter_chunk.dll"
+X11.32="res://addons/scatter-chunk/lib/i686-unknown-linux-gnu/libscatter_chunk.so"
+X11.64="res://addons/scatter-chunk/lib/x86_64-unknown-linux-gnu/libscatter_chunk.so"
+
+[dependencies]
+
+HTML5.wasm32=[  ]
+iOS.arm64=[  ]
+OSX.64=[  ]
+Server.32=[  ]
+Server.64=[  ]
+Windows.32=[  ]
+Windows.64=[  ]
+X11.32=[  ]
+X11.64=[  ]

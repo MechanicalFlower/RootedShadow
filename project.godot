@@ -44,10 +44,20 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/root_collider.gd"
 }, {
+"base": "EditorPlugin",
+"class": "ScatterChunkPlugin",
+"language": "NativeScript",
+"path": "res://addons/scatter-chunk/native/ScatterChunkPlugin.gdns"
+}, {
 "base": "PathFinderBody",
 "class": "SpiderTree",
 "language": "GDScript",
 "path": "res://scripts/animation/spider_tree.gd"
+}, {
+"base": "Spatial",
+"class": "SplitMultimeshContainer",
+"language": "NativeScript",
+"path": "res://addons/scatter-chunk/native/SplitMultimeshContainer.gdns"
 } ]
 _global_script_class_icons={
 "HTerrainDataLoader": "",
@@ -57,7 +67,9 @@ _global_script_class_icons={
 "PathFinderBody": "",
 "PlayerHead": "",
 "RootCollider": "",
-"SpiderTree": ""
+"ScatterChunkPlugin": "",
+"SpiderTree": "",
+"SplitMultimeshContainer": ""
 }
 
 [application]
@@ -84,7 +96,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/CSGExport/plugin.cfg", "res://addons/brush/plugin.cfg", "res://addons/fps_graph_overlay/plugin.cfg", "res://addons/scatter/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/CSGExport/plugin.cfg", "res://addons/brush/plugin.cfg", "res://addons/fps_graph_overlay/plugin.cfg", "res://addons/scatter-chunk/plugin.cfg", "res://addons/scatter/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg" )
 
 [input]
 
