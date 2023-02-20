@@ -30,26 +30,8 @@ var next_position = Vector3.ZERO
 var previous_position = Vector3.ZERO
 var previous_tick = 0
 
-# Debug variables for visualizing target, next, and previous positions
-#onready var target_debug = _make_mesh(Color(0, 1, 0))
-#onready var next_position_debug = _make_mesh(Color(0, 0, 1))
-#onready var previous_position_debug = _make_mesh(Color(1, 0, 0))
-
 # The inverse kinematic solver instance
 onready var inverse_kinematic_solver = get_node("%inverse_kinematic_solver")
-
-
-# Creates a mesh instance with the specified color
-#func _make_mesh(color):
-#	var mesh_instance = MeshInstance.new()
-#	add_child(mesh_instance)
-#	mesh_instance.mesh = SphereMesh.new()
-#	mesh_instance.global_scale(Vector3(0.1, 0.1, 0.1))
-#	var material = SpatialMaterial.new()
-#	material.albedo_color = color
-#	mesh_instance.material_override = material
-#	return mesh_instance
-
 
 # Setter function for root_joint_path
 func _set_root_joint_path(node_path):
@@ -150,19 +132,9 @@ func _process(_delta):
 		target_position = lerp(previous_position, next_position, transition_ratio)
 		target_position.y += step_height - abs(lerp(-step_height, step_height, transition_ratio))
 
-	# else:
-	# Small jittering feels unnatural, better not move at all
-	# target.global_transform.origin = current_position.global_transform.origin
-
 	# Solve the inverse kinematic position to the target
 	inverse_kinematic_solver.iteration_count = 1
 	inverse_kinematic_solver.target_position = target_position
 	inverse_kinematic_solver.pole_position = get_node(pole_position_path).global_transform.origin
 	inverse_kinematic_solver.pole_rotation = get_node(pole_rotation_path).global_transform.origin
 	inverse_kinematic_solver.update_joint_transforms()
-
-	# Debugging for the Editor
-#	if Engine.is_editor_hint():
-#		target_debug.global_transform.origin = target_position
-#		next_position_debug.global_transform.origin = next_position
-#		previous_position_debug.global_transform.origin = previous_position
