@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/normal.png-a44e956b316e463a6d270143d2475a2d.stex"
+path="res://.import/icon.svg-497111bfcdb0b9dd996d646163572e32.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/terrain/data/level2/normal.png"
-dest_files=[ "res://.import/normal.png-a44e956b316e463a6d270143d2475a2d.stex" ]
+source_file="res://addons/monitor_overlay/icon.svg"
+dest_files=[ "res://.import/icon.svg-497111bfcdb0b9dd996d646163572e32.stex" ]
 
 [params]
 
@@ -23,13 +23,13 @@ flags/repeat=0
 flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
-flags/srgb=0
-process/fix_alpha_border=false
+flags/srgb=2
+process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=false
+detect_3d=true
 svg/scale=1.0
