@@ -1,10 +1,9 @@
 use gdnative::prelude::*;
 
 mod ik;
-mod scatter;
 mod lod;
 mod plugin;
-
+mod scatter;
 
 fn init(handle: InitHandle) {
     handle.add_tool_class::<plugin::NativeImplPlugin>();

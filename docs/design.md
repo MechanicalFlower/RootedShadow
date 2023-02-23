@@ -1,4 +1,4 @@
-# Rooted Shadow 
+# Rooted Shadow
 #PSX #Horror #GGJ #GameJam #First-Person
 
 ## Gameplay

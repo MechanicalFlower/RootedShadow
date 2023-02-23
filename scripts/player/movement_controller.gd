@@ -51,9 +51,7 @@ func _physics_process(delta) -> void:
 
 	accelerate(delta)
 
-	velocity = move_and_slide_with_snap(
-		velocity, snap, Vector3.UP, true, 4, floor_max_angle
-	)
+	velocity = move_and_slide_with_snap(velocity, snap, Vector3.UP, true, 4, floor_max_angle)
 
 
 func direction_input() -> void:

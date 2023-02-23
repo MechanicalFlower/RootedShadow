@@ -10,17 +10,19 @@ func _on_game_mode_changed(new_game_mode):
 		for viewport in get_tree().get_nodes_in_group("viewports"):
 			viewport.gui_disable_input = true
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		get_node('%GameOver').show()
+		get_node("%GameOver").show()
 	elif new_game_mode == GameManager.GameMode.END:
 		for viewport in get_tree().get_nodes_in_group("viewports"):
 			viewport.gui_disable_input = true
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		get_node('%End').show()
-		
+		get_node("%End").show()
 
 
-func _process(delta):
-	if GameManager.game_mode == GameManager.GameMode.GAME_OVER or GameManager.game_mode == GameManager.GameMode.END:
+func _process(_delta):
+	if (
+		GameManager.game_mode == GameManager.GameMode.GAME_OVER
+		or GameManager.game_mode == GameManager.GameMode.END
+	):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 

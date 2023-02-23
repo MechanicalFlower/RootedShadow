@@ -2,6 +2,4 @@
 
 mod lod_spatial;
 
-pub use self::{
-    lod_spatial::*,
-};
+pub use self::lod_spatial::*;

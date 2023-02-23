@@ -1,5 +1,5 @@
+use gdnative::api::{ProjectSettings, RandomNumberGenerator, Spatial};
 use gdnative::prelude::*;
-use gdnative::api::{Spatial, ProjectSettings, RandomNumberGenerator};
 
 #[derive(NativeClass)]
 #[inherit(Spatial)]
@@ -14,7 +14,6 @@ pub struct NativeLODSpatial {
     timer: f64,
 }
 
-
 #[methods]
 impl NativeLODSpatial {
     fn register_properties(builder: &ClassBuilder<NativeLODSpatial>) {
@@ -23,30 +22,52 @@ impl NativeLODSpatial {
         builder
             .property::<bool>("enable_lod")
             .with_getter(move |my_node: &NativeLODSpatial, _base: TRef<Spatial>| my_node.enable_lod)
-            .with_setter(move |my_node: &mut NativeLODSpatial, _base: TRef<Spatial>, new_value| my_node.enable_lod = new_value)
+            .with_setter(
+                move |my_node: &mut NativeLODSpatial, _base: TRef<Spatial>, new_value| {
+                    my_node.enable_lod = new_value
+                },
+            )
             .with_default(true)
             .done();
 
         builder
             .property::<f32>("lod_0_max_distance")
-            .with_getter(move |my_node: &NativeLODSpatial, _base: TRef<Spatial>| my_node.lod_0_max_distance)
-            .with_setter(move |my_node: &mut NativeLODSpatial, _base: TRef<Spatial>, new_value| my_node.lod_0_max_distance = new_value)
+            .with_getter(move |my_node: &NativeLODSpatial, _base: TRef<Spatial>| {
+                my_node.lod_0_max_distance
+            })
+            .with_setter(
+                move |my_node: &mut NativeLODSpatial, _base: TRef<Spatial>, new_value| {
+                    my_node.lod_0_max_distance = new_value
+                },
+            )
             .with_default(10.0)
             .with_hint(FloatHint::Range(RangeHint::new(0.0, 1000.0).with_step(0.1)))
             .done();
 
         builder
             .property::<f32>("lod_1_max_distance")
-            .with_getter(move |my_node: &NativeLODSpatial, _base: TRef<Spatial>| my_node.lod_1_max_distance)
-            .with_setter(move |my_node: &mut NativeLODSpatial, _base: TRef<Spatial>, new_value| my_node.lod_1_max_distance = new_value)
+            .with_getter(move |my_node: &NativeLODSpatial, _base: TRef<Spatial>| {
+                my_node.lod_1_max_distance
+            })
+            .with_setter(
+                move |my_node: &mut NativeLODSpatial, _base: TRef<Spatial>, new_value| {
+                    my_node.lod_1_max_distance = new_value
+                },
+            )
             .with_default(25.0)
             .with_hint(FloatHint::Range(RangeHint::new(0.0, 1000.0).with_step(0.1)))
             .done();
-        
+
         builder
             .property::<f32>("lod_2_max_distance")
-            .with_getter(move |my_node: &NativeLODSpatial, _base: TRef<Spatial>| my_node.lod_2_max_distance)
-            .with_setter(move |my_node: &mut NativeLODSpatial, _base: TRef<Spatial>, new_value| my_node.lod_2_max_distance = new_value)
+            .with_getter(move |my_node: &NativeLODSpatial, _base: TRef<Spatial>| {
+                my_node.lod_2_max_distance
+            })
+            .with_setter(
+                move |my_node: &mut NativeLODSpatial, _base: TRef<Spatial>, new_value| {
+                    my_node.lod_2_max_distance = new_value
+                },
+            )
             .with_default(100.0)
             .with_hint(FloatHint::Range(RangeHint::new(0.0, 1000.0).with_step(0.1)))
             .done();
@@ -67,10 +88,16 @@ impl NativeLODSpatial {
     #[method]
     fn _ready(&mut self, #[base] _owner: TRef<Spatial>) {
         if ProjectSettings::godot_singleton().has_setting("lod/spatial_bias") {
-		    self.lod_bias = ProjectSettings::godot_singleton().get_setting("lod/spatial_bias").try_to::<f32>().unwrap();
+            self.lod_bias = ProjectSettings::godot_singleton()
+                .get_setting("lod/spatial_bias")
+                .try_to::<f32>()
+                .unwrap();
         }
         if ProjectSettings::godot_singleton().has_setting("lod/refresh_rate") {
-            self.refresh_rate = ProjectSettings::godot_singleton().get_setting("lod/refresh_rate").try_to::<f64>().unwrap();
+            self.refresh_rate = ProjectSettings::godot_singleton()
+                .get_setting("lod/refresh_rate")
+                .try_to::<f64>()
+                .unwrap();
         }
 
         let rng = RandomNumberGenerator::new();
@@ -80,15 +107,15 @@ impl NativeLODSpatial {
 
     #[method]
     fn _physics_process(&mut self, #[base] owner: TRef<Spatial>, delta: f64) {
-    	if !self.enable_lod {
+        if !self.enable_lod {
             return;
         }
-        
+
         let tree = owner.get_tree().unwrap();
         let tree = unsafe { tree.assume_safe() };
         let players = tree.get_nodes_in_group("player");
-        
-        if players.len() > 0 {
+
+        if !players.is_empty() {
             let player = players.get(0);
 
             if let Some(player) = player.to_object::<Spatial>() {
@@ -101,7 +128,11 @@ impl NativeLODSpatial {
 
                 self.timer = 0.0;
 
-                let distance = camera.global_transform().origin.distance_to(owner.global_transform().origin) + self.lod_bias;
+                let distance = camera
+                    .global_transform()
+                    .origin
+                    .distance_to(owner.global_transform().origin)
+                    + self.lod_bias;
 
                 let lod: u8;
                 if distance < self.lod_0_max_distance {

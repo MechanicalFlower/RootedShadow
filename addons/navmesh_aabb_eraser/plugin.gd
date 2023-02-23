@@ -36,13 +36,13 @@ func clear():
 
 func handles(object):
 	return object is NavigationMeshInstance
-	
+
 func make_visible(visible):
 	if button_instance != null:
 		button_instance.visible = visible
 	if visible == false:
 		edited_obj = null
-		
+
 func edit(object):
 	if not object is NavigationMeshInstance:
 		return
@@ -61,13 +61,13 @@ func get_sub_boxes(target: Spatial) -> Array:
 		if c is AABBNode:
 			ret.append(c.get_global_bounds())
 	return ret
-	
+
 func has_point(boxes: Array, point: Vector3) -> bool:
 	for box in boxes:
 		if box.has_point(point):
 			return true
 	return false
-	
+
 func modify(target: NavigationMeshInstance):
 	var navmesh = target.navmesh
 	if navmesh == null:

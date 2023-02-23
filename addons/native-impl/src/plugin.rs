@@ -13,11 +13,14 @@ impl NativeImplPlugin {
 
     #[method]
     fn _enter_tree(&self, #[base] owner: TRef<EditorPlugin>) {
-        let script = load::<Script>("res://addons/native-impl/native/NativeSplitMultimeshContainer.gdns").unwrap();
+        let script =
+            load::<Script>("res://addons/native-impl/native/NativeSplitMultimeshContainer.gdns")
+                .unwrap();
         let texture = load::<Texture>("res://addons/native-impl/icons/divide.svg").unwrap();
         owner.add_custom_type("NativeSplitMultimeshContainer", "Spatial", script, texture);
 
-        let script = load::<Script>("res://addons/native-impl/native/NativeLODSpatial.gdns").unwrap();
+        let script =
+            load::<Script>("res://addons/native-impl/native/NativeLODSpatial.gdns").unwrap();
         let texture = load::<Texture>("res://addons/lod/lod_spatial.svg").unwrap();
         owner.add_custom_type("NativeLODSpatial", "Spatial", script, texture);
 

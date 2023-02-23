@@ -1,6 +1,5 @@
 extends Spatial
 
-
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -8,8 +7,7 @@ extends Spatial
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	get_parent().call_deferred('remove_child', self)
-
+	get_parent().call_deferred("remove_child", self)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

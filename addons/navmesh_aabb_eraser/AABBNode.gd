@@ -7,7 +7,7 @@ export(Vector3) var size = Vector3(1,1,1) setget set_value,get_value
 func set_value(value: Vector3):
 	size = value
 	update_gizmo()
-	
+
 func get_value() -> Vector3:
 	return size
 

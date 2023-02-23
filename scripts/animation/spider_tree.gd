@@ -1,11 +1,13 @@
 class_name SpiderTree
 extends PathFinderBody
 
-enum states {PATROL, CHASE}
+enum States { PATROL, CHASE }
 
-export (NodePath) var patrol_path
+export(NodePath) var patrol_path
 
-var state = states.PATROL
+var state = States.PATROL
+
+var player_node
 
 # For path following.
 var patrol_index = 0
@@ -15,7 +17,6 @@ onready var patrol_points := patrol_node.curve.get_baked_points() as PoolVector3
 # TODO : avoid this
 onready var parent := get_parent() as Spatial
 
-var player_node
 
 func _ready():
 	player_node = get_tree().get_nodes_in_group("player")[0]
@@ -37,18 +38,18 @@ func pathfollow():
 	nav_agent.set_velocity(velocity)
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if global_translation.distance_to(player_node.global_translation) > 50:
 		return
-	
+
 	# Depending on the current state, choose a movement target.
 	match state:
 		# Move along assigned path.
-		states.PATROL:
+		States.PATROL:
 			pathfollow()
 
 		# Move towards player.
-		states.CHASE:
+		States.CHASE:
 			pathfinding()
 
 			if nav_agent.is_navigation_finished():
@@ -57,7 +58,7 @@ func _physics_process(delta):
 					set_target_location(player_node.global_translation)
 				else:
 					# Return to patrol otherwise
-					set_state(states.PATROL)
+					set_state(States.PATROL)
 
 
 # To handle correctly footsteep

@@ -24,7 +24,7 @@ func redraw(gizmo: EditorSpatialGizmo) -> void:
 	lines.push_back(Vector3(-s.x, s.y, -s.z))
 	lines.push_back(Vector3(s.x, -s.y, -s.z))
 	lines.push_back(Vector3(-s.x, -s.y, -s.z))
-	
+
 	lines.push_back(Vector3(s.x, s.y, s.z))
 	lines.push_back(Vector3(s.x, -s.y, s.z))
 	lines.push_back(Vector3(-s.x, -s.y, s.z))
@@ -33,7 +33,7 @@ func redraw(gizmo: EditorSpatialGizmo) -> void:
 	lines.push_back(Vector3(s.x, -s.y, -s.z))
 	lines.push_back(Vector3(-s.x, s.y, -s.z))
 	lines.push_back(Vector3(-s.x, -s.y, -s.z))
-	
+
 	lines.push_back(Vector3(s.x, s.y, s.z))
 	lines.push_back(Vector3(s.x, s.y, -s.z))
 	lines.push_back(Vector3(-s.x, s.y, s.z))
@@ -42,5 +42,5 @@ func redraw(gizmo: EditorSpatialGizmo) -> void:
 	lines.push_back(Vector3(s.x, -s.y, -s.z))
 	lines.push_back(Vector3(-s.x, -s.y, s.z))
 	lines.push_back(Vector3(-s.x, -s.y, -s.z))
-	
+
 	gizmo.add_lines(lines, get_material("lines", gizmo))

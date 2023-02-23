@@ -3,10 +3,11 @@ extends Node
 
 const MultimeshHelper = preload("res://scripts/editor/multimesh_helper.gd")
 
-export var scene: PackedScene 
-export var split_multimesh_path: NodePath 
+export var scene: PackedScene
+export var split_multimesh_path: NodePath
 
 onready var split_multimesh_node = get_node(split_multimesh_path) as Spatial
+
 
 func _ready():
 	if split_multimesh_node == null:

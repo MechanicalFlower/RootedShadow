@@ -26,13 +26,13 @@
 - [ ] zone pour se cacher
 - streetlights
 	- [x] debut, fin et a chaque porte
-	- [x] relier par un cable (pour indiquer au joueur ou aller)   
+	- [x] relier par un cable (pour indiquer au joueur ou aller)
 - parcours de game design pour donner du fils a retordre au joueur
 	- [x] "level 1" le labyrinthe (on pense que suivre la boussole est une bonne idée)
 	- [x] "level 2" le carré (on apprend a se caché)
 	- [x] "level 3" le passage obligé (on cours se caché)
 	- peut etre faire trois scenes pour les perfs
-- bonus: 
+- bonus:
 	- [x] footsteep
 	- wind
 		- [x] sound

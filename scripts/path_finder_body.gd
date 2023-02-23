@@ -4,7 +4,7 @@ extends KinematicBody
 var direction := Vector3.ZERO
 var velocity := Vector3.ZERO
 
-onready var nav_agent = get_node('%NavigationAgent') as NavigationAgent
+onready var nav_agent = get_node("%NavigationAgent") as NavigationAgent
 
 
 func _ready():
