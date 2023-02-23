@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/models/wood.material" type="Material" id=1]
+[ext_resource path="res://addons/native-impl/native/NativeLODSpatial.gdns" type="Script" id=2]
+[ext_resource path="res://scenes/prototype/root_area.tscn" type="PackedScene" id=3]
 
 [sub_resource type="ArrayMesh" id=1]
 blend_shape_mode = 0
@@ -17,5 +19,12 @@ surfaces/0 = {
 "vertex_count": 2100
 }
 
-[node name="Root1" type="MeshInstance"]
+[node name="NativeLODSpatial" type="Spatial"]
+script = ExtResource( 2 )
+lod_0_max_distance = 5.0
+lod_1_max_distance = 50.0
+
+[node name="Root1-lod0" type="MeshInstance" parent="."]
 mesh = SubResource( 1 )
+
+[node name="RootCollider" parent="." instance=ExtResource( 3 )]

@@ -50,28 +50,28 @@ _data = {
 "tilts": PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 )
 }
 
-[sub_resource type="Curve3D" id=85]
+[sub_resource type="Curve3D" id=93]
 _data = {
-"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, -1.16198, 4.5683, 0.481789, 0, 0, 0, 0, 0, 0, 128.386, 4.5683, 2.85284, 0, 0, 0, 0, 0, 0, 123.843, 4.5683, 78.0948, 0, 0, 0, 0, 0, 0, -0.65152, 4.5683, 74.6944, 0, 0, 0, 0, 0, 0, -5.7522, 4.5683, 40.1232, 0, 0, 0, 0, 0, 0, -2.91849, 4.5683, 10.6526 ),
-"tilts": PoolRealArray( 0, 0, 0, 0, 0, 0 )
+"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, -2.52446, -0.924396, -5.20118, 0, 0, 0, 0, 0, 0, 101.269, -0.924396, -4.50105, 0, 0, 0, 0, 0, 0, 104.77, -0.924396, -11.5023, 0, 0, 0, 0, 0, 0, 131.55, -0.924396, -11.1523, 0, 0, 0, 0, 0, 0, 132.25, -0.924396, 50.809, 0, 0, 0, 0, 0, 0, 124.199, -0.924396, 51.5091, 0, 0, 0, 0, 0, 0, 124.374, -0.924396, 63.5863, 0, 0, 0, 0, 0, 0, 108.096, -0.924396, 67.4371, 0, 0, 0, 0, 0, 0, 106.52, -0.924396, 75.3135, 0, 0, 0, 0, 0, 0, 62.0623, -0.924396, 76.0136, 0, 0, 0, 0, 0, 0, 60.8371, -0.924396, 68.3122, 0, 0, 0, 0, 0, 0, 37.2078, -0.924396, 68.1372, 0, 0, 0, 0, 0, 0, 35.8075, -0.924396, 75.1385, 0, 0, 0, 0, 0, 0, -9.87579, -0.924396, 74.0883, 0, 0, 0, 0, 0, 0, -10.5759, -0.924396, 59.5606, 0, 0, 0, 0, 0, 0, -2.87453, -0.924396, 59.5606 ),
+"tilts": PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 )
 }
 
-[sub_resource type="Curve3D" id=86]
+[sub_resource type="Curve3D" id=94]
 _data = {
-"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, -18.8427, 4.5683, -0.651031, 0, 0, 0, 0, 0, 0, -122.827, 4.5683, -3.76239, 0, 0, 0, 0, 0, 0, -128.067, 4.5683, -37.3322, 0, 0, 0, 0, 0, 0, -123.424, 4.5683, -77.3009, 0, 0, 0, 0, 0, 0, 7.41676, 4.5683, -74.8446, 0, 0, 0, 0, 0, 0, 2.83162, 4.5683, -1.15479 ),
-"tilts": PoolRealArray( 0, 0, 0, 0, 0, 0 )
+"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, -2.69849, 4.56888, -9.42938, 0, 0, 0, 0, 0, 0, -14.2506, 4.56888, -10.3046, 0, 0, 0, 0, 0, 0, -16.351, 4.56888, -1.55295, 0, 0, 0, 0, 0, 0, -59.5839, 4.56888, -1.72798, 0, 0, 0, 0, 0, 0, -62.3844, 4.56888, -10.3046, 0, 0, 0, 0, 0, 0, -85.1385, 4.56888, -10.3046, 0, 0, 0, 0, 0, 0, -84.6134, 4.56888, -1.90302, 0, 0, 0, 0, 0, 0, -133.097, 4.56888, -2.77817, 0, 0, 0, 0, 0, 0, -134.322, 4.56888, -17.6559, 0, 0, 0, 0, 0, 0, -126.096, 4.56888, -19.5812, 0, 0, 0, 0, 0, 0, -124.871, 4.56888, -80.4923, 0, 0, 0, 0, 0, 0, -21.952, 4.56888, -81.7176, 0, 0, 0, 0, 0, 0, -17.5762, 4.56888, -89.769, 0, 0, 0, 0, 0, 0, 9.72876, 4.56888, -88.7188, 0, 0, 0, 0, 0, 0, 10.779, 4.56888, -27.9828, 0, 0, 0, 0, 0, 0, 2.37744, 4.56888, -26.5825, 0, 0, 0, 0, 0, 0, 3.60266, 4.56888, -9.95448 ),
+"tilts": PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 )
 }
 
 [sub_resource type="Curve3D" id=87]
 _data = {
-"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, 1.0549, 2.28287, 0.369217, 0, 0, 0, 0, 0, 0, 36.7869, 2.28287, 2.35434, 0, 0, 0, 0, 0, 0, 39.0313, 2.28287, 2.47902, 0, 0, 0, 0, 0, 0, 36.8866, 2.28287, 41.6445, 0, 0, 0, 0, 0, 0, -41.7034, 2.28287, 35.7371, 0, 0, 0, 0, 0, 0, -61.0399, 2.28287, -44.9116, 0, 0, 0, 0, 0, 0, -40.2703, 2.28287, 33.1471, 0, 0, 0, 0, 0, 0, 38.8078, 2.28287, 42.3241 ),
+"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, 1.0549, 2.28287, 0.369217, 0, 0, 0, 0, 0, 0, 29.7563, 2.28287, -0.826157, 0, 0, 0, 0, 0, 0, 37.1076, 2.28287, 10.901, 0, 0, 0, 0, 0, 0, 38.858, 2.28287, 36.6307, 0, 0, 0, 0, 0, 0, -38.3311, 2.28287, 27.704, 0, 0, 0, 0, 0, 0, -61.0399, 2.28287, -44.9116, 0, 0, 0, 0, 0, 0, -37.806, 2.28287, 27.0039, 0, 0, 0, 0, 0, 0, 40.4332, 2.28287, 35.4054 ),
 "tilts": PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 )
 }
 
 [sub_resource type="Curve3D" id=88]
 _data = {
-"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, 0.897221, 5.1267, 1.31317, 0, 0, 0, 0, 0, 0, 1.35507, 5.1267, 48.457, 0, 0, 0, 0, 0, 0, -91.3844, 5.1267, 37.1045, 0, 0, 0, 0, 0, 0, 2.73566, 5.1267, 49.3108 ),
-"tilts": PoolRealArray( 0, 0, 0, 0 )
+"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, 0.897221, 5.1267, 1.31317, 0, 0, 0, 0, 0, 0, -91.3844, 5.1267, 37.1045, 0, 0, 0, 0, 0, 0, 1.45224, 5.1267, 39.0752 ),
+"tilts": PoolRealArray( 0, 0, 0 )
 }
 
 [node name="Forest" type="Spatial"]
@@ -82,210 +82,357 @@ navmesh = ExtResource( 3 )
 
 [node name="Terrain" parent="NavigationMeshInstance" instance=ExtResource( 1 )]
 
-[node name="AABBNode" type="Spatial" parent="NavigationMeshInstance"]
+[node name="Excluder" type="Spatial" parent="NavigationMeshInstance"]
+
+[node name="AABBNode" type="Spatial" parent="NavigationMeshInstance/Excluder"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -208.052, 11.4964, -19.4554 )
 script = ExtResource( 6 )
-size = Vector3( 100, 50, 500 )
+size = Vector3( 100, 50, 550 )
 
-[node name="AABBNode2" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.956, 11.4964, 233.483 )
+[node name="AABBNode2" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.0685, 11.4964, 234.511 )
 script = ExtResource( 6 )
 size = Vector3( 500, 50, 100 )
 
-[node name="AABBNode3" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 244.359, 11.4964, 140.945 )
-script = ExtResource( 6 )
-size = Vector3( 100, 50, 100 )
-
-[node name="AABBNode5" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -157.156, 11.4964, 20.1305 )
-script = ExtResource( 6 )
-size = Vector3( 100, 50, 100 )
-
-[node name="AABBNode10" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 97.3252, 11.4964, 106.5 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode11" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 149.25, 11.4964, 107.014 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode12" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 104.009, 11.4964, 26.8139 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode13" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55.6829, 11.4964, -23.5682 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode14" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 105.551, 11.4964, -64.6964 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode15" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.238, 11.4964, -134.614 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode16" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.38249, 11.4964, 68.9702 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode17" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.0688, 11.4964, 93.6472 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode18" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 42.8303, 11.4964, 179.502 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode19" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 89.0995, 11.4964, 182.587 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode20" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 139.482, 11.4964, 186.186 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode22" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 183.694, 11.4964, 0.0805359 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode23" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 96.2969, 11.4964, -16.8848 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode24" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5828, 11.4964, 39.1523 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode25" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.9495, 11.4964, -60.0695 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode29" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 61.338, 11.4964, 5.22157 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode30" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 236.133, 11.4964, -34.3643 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode31" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.28448, 11.4964, 121.424 )
-script = ExtResource( 6 )
-size = Vector3( 20, 50, 20 )
-
-[node name="AABBNode32" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -96.3088, 11.4964, 140.445 )
-script = ExtResource( 6 )
-size = Vector3( 20, 50, 20 )
-
-[node name="AABBNode33" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -96.8229, 11.4964, 120.91 )
-script = ExtResource( 6 )
-size = Vector3( 20, 50, 20 )
-
-[node name="AABBNode35" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -75.7447, 11.4964, 64.8724 )
-script = ExtResource( 6 )
-size = Vector3( 20, 50, 20 )
-
-[node name="AABBNode36" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 98.536, 11.4964, -209.658 )
-script = ExtResource( 6 )
-size = Vector3( 20, 50, 20 )
-
-[node name="AABBNode37" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 37.3578, 11.4964, -163.903 )
-script = ExtResource( 6 )
-size = Vector3( 20, 50, 20 )
-
-[node name="AABBNode38" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 58.9501, 11.4964, -144.881 )
-script = ExtResource( 6 )
-size = Vector3( 20, 50, 20 )
-
-[node name="AABBNode39" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 81.0565, 11.4964, -140.769 )
-script = ExtResource( 6 )
-size = Vector3( 20, 50, 20 )
-
-[node name="AABBNode40" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.618, 11.4964, -105.295 )
-script = ExtResource( 6 )
-size = Vector3( 20, 50, 20 )
-
-[node name="AABBNode41" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 103.163, 11.4964, -90.9006 )
-script = ExtResource( 6 )
-size = Vector3( 20, 50, 20 )
-
-[node name="AABBNode34" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -79.7626, 11.4964, 147.962 )
-script = ExtResource( 6 )
-size = Vector3( 10, 50, 10 )
-
-[node name="AABBNode26" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 230.478, 11.4964, -132.044 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode27" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -164.867, 11.4964, 156.882 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode28" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -165.381, 11.4964, 134.261 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode21" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 174.955, 11.4964, 189.27 )
-script = ExtResource( 6 )
-size = Vector3( 50, 50, 50 )
-
-[node name="AABBNode8" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 147.707, 11.4964, -283.19 )
-script = ExtResource( 6 )
-size = Vector3( 300, 50, 100 )
-
-[node name="AABBNode9" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 281.374, 11.4964, -151.066 )
-script = ExtResource( 6 )
-size = Vector3( 100, 50, 300 )
-
-[node name="AABBNode7" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -82.0966, 11.4964, -149.523 )
+[node name="AABBNode4" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -96.4919, 11.4964, -150.037 )
 script = ExtResource( 6 )
 size = Vector3( 200, 50, 300 )
 
-[node name="AABBNode4" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 245.387, 11.4964, 48.9203 )
+[node name="AABBNode5" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 135.368, 11.4964, 95.7036 )
 script = ExtResource( 6 )
-size = Vector3( 100, 50, 150 )
+size = Vector3( 80, 50, 40 )
 
-[node name="AABBNode6" type="Spatial" parent="NavigationMeshInstance"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.376, 11.4964, -15.3425 )
+[node name="AABBNode6" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 93.7261, 11.4964, 100.33 )
 script = ExtResource( 6 )
-size = Vector3( 100, 50, 100 )
+size = Vector3( 40, 50, 40 )
+
+[node name="AABBNode7" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.1248, 11.4964, 93.6471 )
+script = ExtResource( 6 )
+size = Vector3( 40, 50, 40 )
+
+[node name="AABBNode9" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.95342, 11.4964, 67.942 )
+script = ExtResource( 6 )
+size = Vector3( 40, 50, 40 )
+
+[node name="AABBNode10" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37.8842, 11.4964, 13.9613 )
+script = ExtResource( 6 )
+size = Vector3( 40, 50, 40 )
+
+[node name="AABBNode11" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -131.451, 11.4964, 13.9613 )
+script = ExtResource( 6 )
+size = Vector3( 40, 50, 40 )
+
+[node name="AABBNode12" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.8081, 11.4964, -108.395 )
+script = ExtResource( 6 )
+size = Vector3( 40, 50, 40 )
+
+[node name="AABBNode13" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 53.5519, 11.4964, -250.565 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode14" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 73.8279, 11.4964, -247.51 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode15" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 91.8819, 11.4964, -238.344 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode16" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 110.491, 11.4964, -238.066 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode17" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 130.767, 11.4964, -237.788 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode18" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 121.601, 11.4964, -231.122 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode19" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 97.9924, 11.4964, -208.624 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode20" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 150.488, 11.4964, -240.288 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode21" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170.764, 11.4964, -239.177 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode22" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 229.648, 11.4964, -240.844 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode23" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 240.48, 11.4964, -239.177 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode24" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 236.869, 11.4964, -222.512 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode25" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 242.98, 11.4964, -203.903 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode26" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 249.368, 11.4964, -186.126 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode27" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 242.98, 11.4964, -151.407 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode28" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 201.317, 11.4964, -136.686 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode29" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 222.148, 11.4964, -134.186 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode30" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 222.982, 11.4964, -121.687 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode31" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 242.424, 11.4964, -122.521 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode32" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 241.036, 11.4964, -133.909 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode33" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 227.703, 11.4964, -147.796 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode34" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 242.424, 11.4964, -171.405 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode35" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 228.814, 11.4964, -101.411 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode36" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 243.813, 11.4964, -101.134 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode37" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 230.759, 11.4964, -82.802 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode38" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 244.369, 11.4964, -88.0793 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode39" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 217.426, 11.4964, -21.974 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode40" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 227.703, 11.4964, -37.5282 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode41" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 232.425, 11.4964, -27.2513 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode42" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 245.48, 11.4964, -26.9735 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode43" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 245.202, 11.4964, -38.3614 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode44" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 173.264, 11.4964, -45.0275 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode45" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 156.598, 11.4964, -9.75282 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode46" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 161.598, 11.4964, -12.2526 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode47" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 171.597, 11.4964, -11.1416 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode48" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 126.323, 11.4964, -87.5238 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode49" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 74.6612, 11.4964, -74.7471 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode50" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.0508, 11.4964, -65.3035 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode51" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55.2547, 11.4964, 20.5516 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode52" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 58.8534, 11.4964, 38.5452 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode53" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 70.1636, 11.4964, 39.5734 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode54" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.7534, 11.4964, 64.2503 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode55" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 37.2611, 11.4964, 70.9336 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode56" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 37.2611, 11.4964, 52.4259 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode57" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 178.125, 11.4964, 34.9465 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode58" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 219.253, 11.4964, 76.0747 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode59" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 212.57, 11.4964, 87.899 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode60" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 213.598, 11.4964, 103.322 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode61" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 29.0354, 11.4964, 161.93 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode62" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 46.0008, 11.4964, 165.529 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode63" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7188, 11.4964, 169.127 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode64" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0645, 11.4964, 164.5 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode65" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -49.6222, 11.4964, 108.463 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode66" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -82.0107, 11.4964, 106.921 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode67" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -138.562, 11.4964, 177.867 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode68" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -104.631, 11.4964, 63.7362 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode69" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -73.785, 11.4964, 70.4195 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode70" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -67.6158, 11.4964, 70.4195 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode71" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 75.3047, 11.4964, 165.529 )
+script = ExtResource( 6 )
+size = Vector3( 20, 50, 20 )
+
+[node name="AABBNode8" type="Spatial" parent="NavigationMeshInstance/Excluder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 93.7261, 11.4964, 100.33 )
+script = ExtResource( 6 )
+size = Vector3( 40, 50, 40 )
 
 [node name="Particles2" type="Particles" parent="."]
 transform = Transform( 0.99847, 0.0552987, 0, -0.0552987, 0.99847, 0, 0, 0, 1, 126.263, -5.14153, -125.009 )
@@ -323,7 +470,7 @@ script = ExtResource( 5 )
 [node name="SpiderTrees" type="Spatial" parent="."]
 
 [node name="Maze_SpiderTree" type="Spatial" parent="SpiderTrees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.8001, -4.47832, -176.739 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.8001, -6.95742, -176.739 )
 
 [node name="spider_controller" parent="SpiderTrees/Maze_SpiderTree" groups=["spider_tree"] instance=ExtResource( 2 )]
 transform = Transform( 3.72193, 0, 0, 0, 3.72193, 0, 0, 0, 3.72193, 0, 0, 0 )
@@ -333,27 +480,27 @@ patrol_path = NodePath("../Path")
 curve = SubResource( 84 )
 
 [node name="Square_SpiderTree1" type="Spatial" parent="SpiderTrees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 59.3118, 4.64827, 68.0284 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 59.3118, 3.20727, 68.0284 )
 
 [node name="spider_controller" parent="SpiderTrees/Square_SpiderTree1" groups=["spider_tree"] instance=ExtResource( 2 )]
 transform = Transform( 3.72193, 0, 0, 0, 3.72193, 0, 0, 0, 3.72193, 0, 0, 0 )
 patrol_path = NodePath("../Path")
 
 [node name="Path" type="Path" parent="SpiderTrees/Square_SpiderTree1"]
-curve = SubResource( 85 )
+curve = SubResource( 93 )
 
 [node name="Square_SpiderTree2" type="Spatial" parent="SpiderTrees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 181.133, -1.02369, 145.77 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 181.133, -2.28601, 145.77 )
 
 [node name="spider_controller" parent="SpiderTrees/Square_SpiderTree2" groups=["spider_tree"] instance=ExtResource( 2 )]
-transform = Transform( 3.72193, 0, 0, 0, 3.72193, 0, 0, 0, 3.72193, 0, 0, 0 )
+transform = Transform( 3.72193, 0, 0, 0, 3.72193, 0, 0, 0, 3.72193, 1.92535, 0, -11.5521 )
 patrol_path = NodePath("../Path")
 
 [node name="Path" type="Path" parent="SpiderTrees/Square_SpiderTree2"]
-curve = SubResource( 86 )
+curve = SubResource( 94 )
 
 [node name="FinalStretch_SpiderTree1" type="Spatial" parent="SpiderTrees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -71.9809, 11.5934, 132.008 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -71.9809, 10.7228, 132.008 )
 
 [node name="spider_controller" parent="SpiderTrees/FinalStretch_SpiderTree1" groups=["spider_tree"] instance=ExtResource( 2 )]
 transform = Transform( 3.72193, 0, 0, 0, 3.72193, 0, 0, 0, 3.72193, 0, 0, 0 )
@@ -363,7 +510,7 @@ patrol_path = NodePath("../Path")
 curve = SubResource( 87 )
 
 [node name="FinalStretch_SpiderTree2" type="Spatial" parent="SpiderTrees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -41.9117, 8.43145, 50.1967 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -41.9117, 7.35833, 50.1967 )
 
 [node name="spider_controller" parent="SpiderTrees/FinalStretch_SpiderTree2" groups=["spider_tree"] instance=ExtResource( 2 )]
 transform = Transform( 3.72193, 0, 0, 0, 3.72193, 0, 0, 0, 3.72193, 0, 0, 0 )

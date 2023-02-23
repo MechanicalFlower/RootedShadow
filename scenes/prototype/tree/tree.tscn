@@ -6,8 +6,8 @@
 
 [node name="NativeLODSpatial" type="Spatial"]
 script = ExtResource( 3 )
-lod_0_max_distance = 25.0
-lod_1_max_distance = 50.0
+lod_0_max_distance = 40.0
+lod_1_max_distance = 60.0
 
 [node name="tree-lod0" parent="." instance=ExtResource( 4 )]
 

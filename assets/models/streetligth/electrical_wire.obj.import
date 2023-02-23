@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/electrical_wire.obj-0bd7d36fa291fcd3f14ddb7c8472b370.mesh"
+
+[deps]
+
+files=[ "res://.import/electrical_wire.obj-0bd7d36fa291fcd3f14ddb7c8472b370.mesh" ]
+
+source_file="res://assets/models/streetligth/electrical_wire.obj"
+dest_files=[ "res://.import/electrical_wire.obj-0bd7d36fa291fcd3f14ddb7c8472b370.mesh", "res://.import/electrical_wire.obj-0bd7d36fa291fcd3f14ddb7c8472b370.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

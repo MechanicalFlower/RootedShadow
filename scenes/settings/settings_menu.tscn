@@ -58,25 +58,6 @@ margin_top = 47.0
 rect_min_size = Vector2( 400, 0 )
 custom_constants/separation = 4
 
-[node name="MusicLabel" type="Label" parent="Sound"]
-margin_right = 650.0
-margin_bottom = 34.0
-rect_min_size = Vector2( 0, 34 )
-custom_fonts/font = ExtResource( 1 )
-text = "Music"
-align = 1
-valign = 1
-
-[node name="Music" parent="Sound" instance=ExtResource( 3 )]
-margin_top = 38.0
-margin_right = 650.0
-margin_bottom = 54.0
-min_value = 0.0
-max_value = 1.0
-step = 0.01
-settings_section = "sound"
-settings_key = "music_volume"
-
 [node name="EffectsLabel" type="Label" parent="Sound"]
 margin_top = 58.0
 margin_right = 650.0
@@ -131,13 +112,13 @@ settings_key = "mouse_sensitivity"
 [node name="Movement" type="HBoxContainer" parent="Controls"]
 margin_top = 58.0
 margin_right = 650.0
-margin_bottom = 108.0
+margin_bottom = 98.0
 custom_constants/separation = 0
 
 [node name="Label" type="Label" parent="Controls/Movement"]
 margin_right = 520.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 0, 50 )
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 1 )
 text = "Movement"
@@ -146,23 +127,73 @@ valign = 1
 [node name="Value" type="Label" parent="Controls/Movement"]
 margin_left = 520.0
 margin_right = 650.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 130, 50 )
+margin_bottom = 40.0
+rect_min_size = Vector2( 130, 40 )
 custom_fonts/font = ExtResource( 1 )
-text = "WSAD / ZQSD"
+text = "WSAD"
+align = 1
+valign = 1
+
+[node name="Sprint" type="HBoxContainer" parent="Controls"]
+margin_top = 102.0
+margin_right = 650.0
+margin_bottom = 142.0
+custom_constants/separation = 0
+
+[node name="Label" type="Label" parent="Controls/Sprint"]
+margin_right = 520.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 1 )
+text = "Sprint"
+valign = 1
+
+[node name="Value" type="Label" parent="Controls/Sprint"]
+margin_left = 520.0
+margin_right = 650.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 130, 40 )
+custom_fonts/font = ExtResource( 1 )
+text = "Left Shift"
+align = 1
+valign = 1
+
+[node name="Jump" type="HBoxContainer" parent="Controls"]
+margin_top = 146.0
+margin_right = 650.0
+margin_bottom = 186.0
+custom_constants/separation = 0
+
+[node name="Label" type="Label" parent="Controls/Jump"]
+margin_right = 520.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 1 )
+text = "Jump"
+valign = 1
+
+[node name="Value" type="Label" parent="Controls/Jump"]
+margin_left = 520.0
+margin_right = 650.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 130, 40 )
+custom_fonts/font = ExtResource( 1 )
+text = "Space"
 align = 1
 valign = 1
 
 [node name="CameraRotation" type="HBoxContainer" parent="Controls"]
-margin_top = 112.0
+margin_top = 190.0
 margin_right = 650.0
-margin_bottom = 162.0
+margin_bottom = 230.0
 custom_constants/separation = 0
 
 [node name="Label" type="Label" parent="Controls/CameraRotation"]
 margin_right = 520.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 0, 50 )
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 1 )
 text = "Camera rotation"
@@ -171,48 +202,48 @@ valign = 1
 [node name="Value" type="Label" parent="Controls/CameraRotation"]
 margin_left = 520.0
 margin_right = 650.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 130, 50 )
+margin_bottom = 40.0
+rect_min_size = Vector2( 130, 40 )
 custom_fonts/font = ExtResource( 1 )
 text = "Mouse"
 align = 1
 valign = 1
 
 [node name="Interact" type="HBoxContainer" parent="Controls"]
-margin_top = 166.0
+margin_top = 234.0
 margin_right = 650.0
-margin_bottom = 216.0
+margin_bottom = 274.0
 custom_constants/separation = 0
 
 [node name="Label" type="Label" parent="Controls/Interact"]
 margin_right = 520.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 0, 50 )
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 1 )
-text = "Use/pick up"
+text = "Use"
 valign = 1
 
 [node name="Value" type="Label" parent="Controls/Interact"]
 margin_left = 520.0
 margin_right = 650.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 130, 50 )
+margin_bottom = 40.0
+rect_min_size = Vector2( 130, 40 )
 custom_fonts/font = ExtResource( 1 )
-text = "LMB"
+text = "E"
 align = 1
 valign = 1
 
 [node name="Settings" type="HBoxContainer" parent="Controls"]
-margin_top = 220.0
+margin_top = 278.0
 margin_right = 650.0
-margin_bottom = 270.0
+margin_bottom = 318.0
 custom_constants/separation = 0
 
 [node name="Label" type="Label" parent="Controls/Settings"]
 margin_right = 520.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 0, 50 )
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 1 )
 text = "Show settings screen"
@@ -221,8 +252,8 @@ valign = 1
 [node name="Value" type="Label" parent="Controls/Settings"]
 margin_left = 520.0
 margin_right = 650.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 130, 50 )
+margin_bottom = 40.0
+rect_min_size = Vector2( 130, 40 )
 custom_fonts/font = ExtResource( 1 )
 text = "Esc"
 align = 1
