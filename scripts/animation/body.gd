@@ -1,4 +1,4 @@
-extends MeshInstance
+extends Spatial
 
 
 onready var controller := get_parent() as SpiderTree

@@ -1,3 +1,4 @@
+tool
 extends Node
 
 const MultimeshHelper = preload("res://scripts/editor/multimesh_helper.gd")

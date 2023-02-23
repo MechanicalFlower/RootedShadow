@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/hud/hud.gd" type="Script" id=1]
 [ext_resource path="res://resources/styles/settings_background.tres" type="StyleBox" id=2]
+[ext_resource path="res://addons/monitor_overlay/monitor_overlay.gd" type="Script" id=3]
 [ext_resource path="res://scenes/settings/button.tscn" type="PackedScene" id=4]
 [ext_resource path="res://resources/fonts/settings_font.tres" type="DynamicFont" id=5]
 
@@ -115,6 +116,18 @@ margin_right = 100.0
 margin_bottom = 29.0
 rect_min_size = Vector2( 100, 0 )
 text = "Exit"
+
+[node name="MonitorOverlay" type="VBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 3 )
+graph_height = 25
+process = true
+physics_process = true
+orphan_nodes = true
+objects_drawn = true
+vertices_drawn = true
+draw_calls_3d = true
 
 [connection signal="pressed" from="HUD/GameOver/VBoxContainer/Buttons/HBoxContainer/Exit" to="HUD" method="_on_Exit_pressed"]
 [connection signal="pressed" from="HUD/GameOver/VBoxContainer/Buttons/HBoxContainer/Retry" to="HUD" method="_on_Retry_pressed"]

@@ -1,0 +1,29 @@
+[general]
+
+singleton=false
+load_once=true
+symbol_prefix="godot_"
+reloadable=true
+
+[entry]
+
+HTML5.wasm32="res://addons/native-impl/lib/wasm32-unknown-emscripten/native_impl.wasm"
+OSX.64="res://addons/native-impl/lib/x86_64-apple-darwin/libnative_impl.dylib"
+Server.32="res://addons/native-impl/lib/i686-unknown-linux-gnu/libnative_impl.so"
+Server.64="res://addons/native-impl/lib/x86_64-unknown-linux-gnu/libnative_impl.so"
+Windows.32="res://addons/native-impl/lib/i686-pc-windows-msvc/native_impl.dll"
+Windows.64="res://addons/native-impl/lib/x86_64-pc-windows-msvc/native_impl.dll"
+X11.32="res://addons/native-impl/lib/i686-unknown-linux-gnu/libnative_impl.so"
+X11.64="res://addons/native-impl/lib/x86_64-unknown-linux-gnu/libnative_impl.so"
+
+[dependencies]
+
+HTML5.wasm32=[  ]
+iOS.arm64=[  ]
+OSX.64=[  ]
+Server.32=[  ]
+Server.64=[  ]
+Windows.32=[  ]
+Windows.64=[  ]
+X11.32=[  ]
+X11.64=[  ]

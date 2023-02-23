@@ -1,3 +1,0 @@
-[alias]
-mkb = "make build-release"
-mkba = "make build-all-release"

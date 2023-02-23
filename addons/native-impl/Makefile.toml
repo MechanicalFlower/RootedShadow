@@ -1,0 +1,74 @@
+[env]
+CARGO_MAKE_RUST_TARGET_TRIPLE = { value = "${BUILD_TARGET}", condition = { env_set = ["BUILD_TARGET"] } }
+
+#
+# Main commands
+#
+
+[tasks.build-debug]
+private = false
+dependencies = ["build-lib-debug"]
+
+[tasks.build-release]
+private = false
+dependencies = ["build-lib-release"]
+
+[tasks.build-all-release]
+private = false
+script_runner = "@shell"
+script = '''
+cargo make --env BUILD_TARGET=i686-unknown-linux-gnu -- build-release
+cargo make --env BUILD_TARGET=x86_64-unknown-linux-gnu -- build-release
+cargo make --env BUILD_TARGET=x86_64-apple-darwin -- build-release
+cargo make --env BUILD_TARGET=i686-pc-windows-msvc -- build-release
+cargo make --env BUILD_TARGET=x86_64-pc-windows-gnu -- build-release
+cargo make --env BUILD_TARGET=wasm32-unknown-emscripten -- build-release
+'''
+
+#
+# Debug tasks
+#
+
+[tasks.build-crate-debug]
+private = true
+script_runner = "@shell"
+script = '''
+cargo build --target $CARGO_MAKE_RUST_TARGET_TRIPLE
+'''
+
+[tasks.build-lib-debug]
+private = true
+dependencies = ["build-crate-debug"]
+script_runner = "@shell"
+script = '''
+if [[ -f ./lib/$CARGO_MAKE_RUST_TARGET_TRIPLE/*.so ]]; then
+  rm ./lib/$CARGO_MAKE_RUST_TARGET_TRIPLE/*.so
+fi
+
+mkdir -p ./lib/$CARGO_MAKE_RUST_TARGET_TRIPLE
+cp ./target/$CARGO_MAKE_RUST_TARGET_TRIPLE/debug/*.so ./lib/$CARGO_MAKE_RUST_TARGET_TRIPLE
+'''
+
+#
+# Release tasks
+#
+
+[tasks.build-crate-release]
+private = true
+script_runner = "@shell"
+script = '''
+cargo build --target $CARGO_MAKE_RUST_TARGET_TRIPLE --release
+'''
+
+[tasks.build-lib-release]
+private = true
+dependencies = ["build-crate-release"]
+script_runner = "@shell"
+script = '''
+if [[ -f ./lib/$CARGO_MAKE_RUST_TARGET_TRIPLE/*.so ]]; then
+  rm ./lib/$CARGO_MAKE_RUST_TARGET_TRIPLE/*.so
+fi
+
+mkdir -p ./lib/$CARGO_MAKE_RUST_TARGET_TRIPLE
+cp ./target/$CARGO_MAKE_RUST_TARGET_TRIPLE/release/*.so ./lib/$CARGO_MAKE_RUST_TARGET_TRIPLE
+'''

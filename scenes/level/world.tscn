@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/audios/wind woosh loop.ogg" type="AudioStream" id=3]
 
 [node name="World" type="Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -137.193, -2.28287, 156.168 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -137.193, 6.47633, 156.168 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )

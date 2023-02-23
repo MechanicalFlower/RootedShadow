@@ -38,6 +38,9 @@ func pathfollow():
 
 
 func _physics_process(delta):
+	if global_translation.distance_to(player_node.global_translation) > 50:
+		return
+	
 	# Depending on the current state, choose a movement target.
 	match state:
 		# Move along assigned path.

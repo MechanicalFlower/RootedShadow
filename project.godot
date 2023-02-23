@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Spatial",
+"class": "AABBNode",
+"language": "GDScript",
+"path": "res://addons/navmesh_aabb_eraser/AABBNode.gd"
+}, {
 "base": "ResourceFormatLoader",
 "class": "HTerrainDataLoader",
 "language": "GDScript",
@@ -24,10 +29,50 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/interactable.gd"
 }, {
+"base": "CPUParticles",
+"class": "LODCPUParticles",
+"language": "GDScript",
+"path": "res://addons/lod/lod_cpu_particles.gd"
+}, {
+"base": "OmniLight",
+"class": "LODOmniLight",
+"language": "GDScript",
+"path": "res://addons/lod/lod_omni_light.gd"
+}, {
+"base": "Particles",
+"class": "LODParticles",
+"language": "GDScript",
+"path": "res://addons/lod/lod_particles.gd"
+}, {
+"base": "Spatial",
+"class": "LODSpatial",
+"language": "GDScript",
+"path": "res://addons/lod/lod_spatial.gd"
+}, {
+"base": "SpotLight",
+"class": "LODSpotLight",
+"language": "GDScript",
+"path": "res://addons/lod/lod_spot_light.gd"
+}, {
 "base": "KinematicBody",
 "class": "MovementController",
 "language": "GDScript",
 "path": "res://scripts/player/movement_controller.gd"
+}, {
+"base": "Spatial",
+"class": "NativeIKSolver",
+"language": "NativeScript",
+"path": "res://addons/native-impl/native/NativeIKSolver.gdns"
+}, {
+"base": "Spatial",
+"class": "NativeLODSpatial",
+"language": "NativeScript",
+"path": "res://addons/native-impl/native/NativeLODSpatial.gdns"
+}, {
+"base": "Spatial",
+"class": "NativeSplitMultimeshContainer",
+"language": "NativeScript",
+"path": "res://addons/native-impl/native/NativeSplitMultimeshContainer.gdns"
 }, {
 "base": "KinematicBody",
 "class": "PathFinderBody",
@@ -45,31 +90,34 @@ _global_script_classes=[ {
 "path": "res://scripts/root_collider.gd"
 }, {
 "base": "EditorPlugin",
-"class": "ScatterChunkPlugin",
+"class": "NativeImplPlugin",
 "language": "NativeScript",
-"path": "res://addons/scatter-chunk/native/ScatterChunkPlugin.gdns"
+"path": "res://addons/native-impl/native/NativeImplPlugin.gdns"
 }, {
 "base": "PathFinderBody",
 "class": "SpiderTree",
 "language": "GDScript",
 "path": "res://scripts/animation/spider_tree.gd"
-}, {
-"base": "Spatial",
-"class": "SplitMultimeshContainer",
-"language": "NativeScript",
-"path": "res://addons/scatter-chunk/native/SplitMultimeshContainer.gdns"
 } ]
 _global_script_class_icons={
+"AABBNode": "",
 "HTerrainDataLoader": "",
 "HTerrainDataSaver": "",
 "Interactable": "",
+"LODCPUParticles": "res://addons/lod/lod_cpu_particles.svg",
+"LODOmniLight": "res://addons/lod/lod_omni_light.svg",
+"LODParticles": "res://addons/lod/lod_particles.svg",
+"LODSpatial": "res://addons/lod/lod_spatial.svg",
+"LODSpotLight": "res://addons/lod/lod_spot_light.svg",
 "MovementController": "",
+"NativeIKSolver": "",
+"NativeLODSpatial": "",
+"NativeSplitMultimeshContainer": "",
 "PathFinderBody": "",
 "PlayerHead": "",
 "RootCollider": "",
-"ScatterChunkPlugin": "",
-"SpiderTree": "",
-"SplitMultimeshContainer": ""
+"NativeImplPlugin": "",
+"SpiderTree": ""
 }
 
 [application]
@@ -87,7 +135,6 @@ default_bus_layout="res://resources/default_bus_layout.tres"
 GameManager="*res://scripts/framework/game_manager.gd"
 SettingsManager="*res://scripts/framework/settings_manager.gd"
 DebugDraw="*res://addons/zylann.debug_draw/debug_draw.gd"
-FPSGraphOverlay="*res://addons/fps_graph_overlay/FPSGraphOverlay.tscn"
 
 [display]
 
@@ -96,7 +143,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/CSGExport/plugin.cfg", "res://addons/brush/plugin.cfg", "res://addons/fps_graph_overlay/plugin.cfg", "res://addons/scatter-chunk/plugin.cfg", "res://addons/scatter/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/CSGExport/plugin.cfg", "res://addons/brush/plugin.cfg", "res://addons/lod/plugin.cfg", "res://addons/monitor_overlay/plugin.cfg", "res://addons/navmesh_aabb_eraser/plugin.cfg", "res://addons/native-impl/plugin.cfg", "res://addons/scatter/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg" )
 
 [input]
 

@@ -3,7 +3,6 @@
 [ext_resource path="res://scripts/player/head.gd" type="Script" id=1]
 
 [sub_resource type="OccluderShapeSphere" id=1]
-spheres = [ Plane( 0, 0, 0, 100 ) ]
 
 [node name="Head" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.64, 0 )
@@ -17,5 +16,5 @@ fov = 75.0
 transform = Transform( 40, 0, 0, 0, 40, 0, 0, 0, 40, 0, 0, 0 )
 
 [node name="Occluder" type="Occluder" parent="Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.889133 )
 shape = SubResource( 1 )

@@ -332,7 +332,7 @@ func _add_split_multimesh():
 		if not mmi:
 			return
 		# Create a parent container
-		var container = SplitMultimeshContainer.new()
+		var container = NativeSplitMultimeshContainer.new()
 		child.add_child(container)
 		container.global_transform = self.global_transform
 		if store_instaces:

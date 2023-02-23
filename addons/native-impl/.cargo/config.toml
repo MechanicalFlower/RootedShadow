@@ -1,0 +1,4 @@
+[alias]
+mkb = "make build-debug"
+mkbr = "make build-release"
+mkba = "make build-all-release"

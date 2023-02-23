@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/prototype/tree/tree08_lod.tscn" type="PackedScene" id=2]
+[ext_resource path="res://addons/native-impl/native/NativeLODSpatial.gdns" type="Script" id=3]
+[ext_resource path="res://scenes/prototype/tree/tree_clean.tscn" type="PackedScene" id=4]
+
+[node name="NativeLODSpatial" type="Spatial"]
+script = ExtResource( 3 )
+lod_0_max_distance = 25.0
+lod_1_max_distance = 50.0
+
+[node name="tree-lod0" parent="." instance=ExtResource( 4 )]
+
+[node name="tree-lod1" parent="." instance=ExtResource( 2 )]
+visible = false
+skeleton = NodePath("")
