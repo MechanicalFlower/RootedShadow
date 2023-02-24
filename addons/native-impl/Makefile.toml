@@ -21,7 +21,7 @@ cargo make --env BUILD_TARGET=i686-unknown-linux-gnu -- build-release
 cargo make --env BUILD_TARGET=x86_64-unknown-linux-gnu -- build-release
 cargo make --env BUILD_TARGET=x86_64-apple-darwin -- build-release
 cargo make --env BUILD_TARGET=i686-pc-windows-msvc -- build-release
-cargo make --env BUILD_TARGET=x86_64-pc-windows-gnu -- build-release
+cargo make --env BUILD_TARGET=x86_64-pc-windows-msvc -- build-release
 cargo make --env BUILD_TARGET=wasm32-unknown-emscripten -- build-release
 '''
 
