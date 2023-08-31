@@ -1,0 +1,91 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Greeter
+Upstream-Contact: Florian Vazelle <florian.vazelle@vivaldi.net>
+Source: https://github.com/MechanicalFlower/game-template
+
+Files: *
+Copyright: 2023 Florian Vazelle
+License: MIT
+
+# Addons
+
+Files: addons/CSGExport/*
+Copyright: 2020 mohammedzero43
+License: MIT
+Source: https://github.com/mohammedzero43/CSGExport-Godot
+
+Files: addons/fps_graph_overlay/*
+Copyright: 2023 Sander Vanhove
+License: MIT
+Source: https://github.com/SanderVanhove/godot-fps-graph-overlay
+
+Files: addons/lod/*
+Copyright: 2020 Hugo Locurcio and contributors
+License: MIT
+Source: https://github.com/godot-extended-libraries/godot-lod
+
+Files: addons/monitor_overlay/*
+Copyright: 2020 HungryProton
+License: MIT
+Source: https://github.com/HungryProton/monitor_overlay
+
+Files: addons/navmesh_aabb_eraser/*
+Copyright: 2021 Flavelius
+License: MIT
+Source: https://github.com/Flavelius/godot-navmesh-eraser
+
+Files: addons/scatter/*
+Copyright: 2020-present HungryProton
+License: MIT
+Source: https://github.com/Flavelius/godot-navmesh-eraser
+
+Files: addons/zylann.debug_draw/*
+Copyright: 2020 Marc Gilleron
+License: MIT
+Source: https://github.com/Zylann/godot_debug_draw
+
+Files: addons/zylann.hterrain/*
+Copyright: 2016-2020 Marc Gilleron
+License: MIT
+Source: https://github.com/Zylann/godot_heightmap_plugin
+
+# Models
+
+Files: assets/models/car/*
+Copyright: 2021-2022 GGBotNet
+License: CC0-1.0
+Source: https://ggbot.itch.io/psx-style-cars
+
+Files: assets/models/car/*
+Copyright: 2017 Cough-E
+License: CC0-1.0
+Source: https://opengameart.org/content/3d-compass
+
+Files: assets/models/house/*
+Copyright: 2021-2022 Elegant Crow
+License: CC0-1.0
+Source: https://elegantcrow.itch.io/retro-house-pack
+
+# Textures
+
+Files: assets/textures/dirt/*
+Copyright: 2017-2023 Lennart Demes
+License: CC0-1.0
+Source: https://ambientcg.com/view?id=Ground048
+
+Files: assets/textures/grass/*
+Copyright: 2017-2023 Lennart Demes
+License: CC0-1.0
+Source: https://ambientcg.com/view?id=Ground036
+
+Files: assets/icons/*
+Copyright: 2019-2020 Miskatonic Studio
+License: MIT
+Source: https://github.com/miskatonicstudio/goat
+
+# Shaders
+
+Files: assets/shaders/psx/*
+Copyright: 2020 MenacingMecha
+License: MIT
+Source: https://github.com/MenacingMecha/godot-psx-style-demo

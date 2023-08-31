@@ -3,13 +3,12 @@
 
 # 🌲 RootedShadow
 
-![Godot Badge](https://img.shields.io/badge/godot-3.5-blue?logo=Godot-Engine&logoColor=white) ![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white) ![license](https://img.shields.io/badge/license-MIT-green?logo=open-source-initiative&logoColor=white)
-
-[![itch.io](https://img.shields.io/badge/itch.io-rooted--shadow-black?logo=Itch.io&logoColor=white&color=FA5C5C)](https://mechanical-flower.itch.io/rooted-shadow)
+![Godot Badge](https://img.shields.io/badge/godot-3.5-blue?logo=Godot-Engine&logoColor=white) ![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white) ![license](https://img.shields.io/badge/license-MIT-green?logo=open-source-initiative&logoColor=white) ![reuse](./.reuse/REUSE-compliant.svg)
 
 A short stealth game in a dark forest, made with [Godot Engine](https://godotengine.org/), for the Global Game Jam 2023.
 
-<img src="docs/Screenshots1.PNG" width="30%"> <img src="docs/Screenshots2.PNG" width="30%">
+<a href="https://github.com/mechanicalflower/RootedShadow/releases/" target="_blank"><img src="public/publishing/store/github.webp" alt="Download on  Github" height="40px" ></a>
+<a href="https://mechanical-flower.itch.io/rooted-shadow" target="_blank"><img src="public/publishing/store/itchio.webp" alt="Download on  itch.io" height="40px" ></a>
 
 </div>
 
@@ -24,6 +23,14 @@ You are a lost person, in a dark forest, where you are not welcome. You are look
 - `Shift` or `Xbox L3` to sprint.
 - `Space` or `Xbox Ⓐ` to jump.
 - `ESC` to open and close settings menu.
+
+### Screenshots
+
+<div align="center">
+
+<img src="public/publishing/screenshots/screenshot1.png" width="30%"> <img src="public/publishing/screenshots/screenshot2.png" width="30%">
+
+</div>
 
 ## Contributing
 

@@ -31,7 +31,7 @@ func set_state(new_state):
 func pathfollow():
 	if global_translation.distance_to(player_node.global_translation) > 50:
 		return
-		
+
 	if nav_agent.is_navigation_finished():
 		patrol_index = wrapi(patrol_index + 1, 0, patrol_points.size())
 		set_target_location(parent.to_global(patrol_points[patrol_index]))

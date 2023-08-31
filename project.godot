@@ -144,7 +144,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/CSGExport/plugin.cfg", "res://addons/brush/plugin.cfg", "res://addons/fps_graph_overlay/plugin.cfg", "res://addons/lod/plugin.cfg", "res://addons/native-impl/plugin.cfg", "res://addons/navmesh_aabb_eraser/plugin.cfg", "res://addons/scatter/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/CSGExport/plugin.cfg", "res://addons/brush/plugin.cfg", "res://addons/fps_graph_overlay/plugin.cfg", "res://addons/lod/plugin.cfg", "res://addons/monitor_overlay/plugin.cfg", "res://addons/native-impl/plugin.cfg", "res://addons/navmesh_aabb_eraser/plugin.cfg", "res://addons/scatter/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg" )
 
 [input]
 

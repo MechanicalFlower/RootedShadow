@@ -14,6 +14,7 @@ crate-type = ["cdylib"]
 [dependencies]
 gdnative = "0.11.3"
 interpolation = "0.2.0"
+getrandom = { version = "*", features = ["js"] }
 
 [build-dependencies]
 askama = "0.11.1"
