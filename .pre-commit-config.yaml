@@ -1,6 +1,6 @@
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.4.0
+  rev: v5.0.0
   hooks:
   - id: fix-byte-order-marker   # Prevents weird UTF-8 encoding edge cases
   - id: check-case-conflict     # Check if case-insensitive filesystems would bork
@@ -14,27 +14,27 @@ repos:
   - id: mixed-line-ending       # Consistent LF or CRLF
   - id: trailing-whitespace     # No trailing whitespace
 - repo: https://github.com/codespell-project/codespell
-  rev: v2.2.5
+  rev: v2.3.0
   hooks:
   - id: codespell
 - repo: https://github.com/fsfe/reuse-tool
-  rev: v2.0.0
+  rev: v4.0.3
   hooks:
   - id: reuse
 - repo: https://github.com/PyCQA/isort
-  rev: 5.12.0
+  rev: 5.13.2
   hooks:
   - id: isort
 - repo: https://github.com/PyCQA/bandit
-  rev: 1.7.5
+  rev: 1.7.10
   hooks:
   - id: bandit
 - repo: https://github.com/PyCQA/flake8
-  rev: 6.0.0
+  rev: 7.1.1
   hooks:
   - id: flake8
 - repo: https://github.com/pre-commit/mirrors-mypy
-  rev: v1.4.1
+  rev: v1.12.1
   hooks:
   - id: mypy
 - repo: https://github.com/doublify/pre-commit-rust
@@ -44,7 +44,7 @@ repos:
   - id: cargo-check
   - id: clippy
 - repo: https://github.com/nix-community/nixpkgs-fmt
-  rev: v1.2.0
+  rev: v1.3.0
   hooks:
   - id: nixpkgs-fmt
 - repo: local
